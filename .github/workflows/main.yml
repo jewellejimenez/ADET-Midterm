@@ -1,0 +1,30 @@
+name: Workflow for Environments
+
+on:
+
+  workflow_dispatch:
+
+jobs:
+
+  Development:
+    runs-on: ubuntu-latest
+    environment: Development
+
+    steps:
+    - uses: actions/checkout@v2
+
+  Testing:
+    runs-on: ubuntu-latest
+    environment: Testing
+    needs: Development
+
+    steps:
+    - uses: actions/checkout@v2
+
+  Production:
+    runs-on: ubuntu-latest
+    environment: Production
+    needs: Testing
+
+    steps:
+    - uses: actions/checkout@v2
