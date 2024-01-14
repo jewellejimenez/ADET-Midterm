@@ -1,4 +1,4 @@
-![image](https://github.com/jewellejimenez/ADET-Midterm/assets/156565829/fe117a08-600d-43c8-b167-b3dcd4bae9c9)Jewelle Jimenez
+Jewelle Jimenez
 BSCS 3-5
 
 In this repository, I've created three (3) environments: Development, Testing, and Production. As well as six (6) branches and a basic workflow process.
