@@ -16,6 +16,7 @@ jobs:
     environment: Testing
     needs: Development
 
+    steps:
     - uses: actions/checkout@v2
 
   Production:
@@ -23,4 +24,5 @@ jobs:
     environment: Production
     needs: Testing
 
+    steps:
     - uses: actions/checkout@v2
